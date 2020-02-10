@@ -88,7 +88,7 @@ public class LocalFileService {
             contentType = Files.probeContentType(path);
         } catch (IOException e) {
             logger.error("Cannot get file: {}", e.getMessage());
-            
+
             return ResponseEntity
                     .ok()
                     .body(e.getMessage());
